@@ -1,0 +1,28 @@
+#include<stdio.h>
+
+int main()
+{   int n,mm=1,ctr=0;
+    int i, j;
+    printf("Input value of n : ");
+    scanf("%d",&n);
+    int ara[n];
+
+    for(i = 0; i < n; i++){
+        printf("element %d : ",i);
+        scanf("%d",&ara[i]);
+    }
+
+     for (i = 0; i < n; i++) {
+      for (j = i + 1; j < n; j++) {
+       if (ara[i] == ara[j]) {
+         ctr++;
+         break;
+   }
+   }
+ }
+ printf("Total number of duplicate elements found in the array: %d\n", ctr);
+
+
+
+    return 0;
+}
